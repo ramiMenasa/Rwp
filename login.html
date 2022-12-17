@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Sign In</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .form-control:focus {
+            border-color: #000;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+        }
+       
+        .cntr{
+            margin-top: 10%;
+        }
+        #subBtn{
+            background-color: #6dabe4;;
+        }
+
+       #subBtn:hover{
+            background-color: #4292dc;;
+        }
+        .stIcon{
+            margin: 2px;
+            font-size: 45px;
+            transition: all 500ms ease;
+        }
+        .stIcon:hover{
+            font-size: 30px;
+        }
+
+      
+    </style>
+
+</head>
+
+<body class="bg-light ">
+    
+    <div class="container cntr rounded-4 shadow bg-white p-5">
+        <div class="row ">
+            <div class="col-lg-5">
+                <div class="text-center">
+                    <img class="m-5 mb-0" src="pic/signin-image.jpg" alt="">
+                </div>
+                <div class="text-center mt-5 bold">
+                    <a class="card-link text-dark " href="signUp.html"> Create an account </a>
+                </div>
+
+            </div>
+            <div class="col-lg-7" >
+                <h1 class="bold">Sign in</h1>
+                <form class=" mt-5 requires-validation" novalidate  action="index.html">
+
+                    <div class="input-group mb-4">
+                          <div class="input-group-text  bg-white border-start-0 border-top-0 border-end-0"><i class="fa-solid fa-user"></i></div>
+                          <input type="text" class="form-control  bg-white border-start-0 border-top-0 border-end-0" value=""  id="userName" placeholder="Your Name" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                    </div>
+
+                  
+                  
+                    <div class="input-group mb-4">
+                        <div class="input-group-text  bg-white border-start-0 border-top-0 border-end-0"><i class="fa-solid fa-lock"></i></i></div>
+                        <input type="password" class="form-control  bg-white border-start-0 border-top-0 border-end-0"  value="" id="password" placeholder="Your Password" required>
+                        <div class="invalid-feedback">
+                            Please enter a password.
+                          </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                    </div>
+
+                  
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="checkTerminas">
+                        <label class="form-check-label text-black"  for="checkTerminas">
+                            Remember me
+                        </label>
+
+                    </div>
+
+                    <button  type="submit" id="subBtn" class="btn btn-lg text-light shadow ps-4 pe-4"> Login </button>
+                </form>
+                
+                <div class="mt-5 pt-2 "> 
+                    <span>Or login with </span>
+                    <span>
+                        <i class="stIcon text-primary fa-brands fa-square-facebook"></i>
+                        <i class="stIcon text-info fa-brands fa-square-twitter"></i>
+                        <i class="stIcon text-danger fa-brands fa-square-google-plus"></i>
+
+                    </span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+         <script src="js/bootstrap.min.js"> </script>
+         <!-- <script src="js/bootstrap.bundle.min.js"> </script> -->
+         <script>  (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.requires-validation')
+            Array.from(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+</script>
+
+</body>
+
+</html>

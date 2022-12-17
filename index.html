@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .bold{
+            font-weight: bold;
+        }
+
+       
+
+        .dHover:hover {
+            cursor: pointer;
+
+            background-color: rgba(255, 255, 255, 0.087);
+            color:beige;
+        }
+        .btn-hover{
+            max-width: 180px;
+        }
+        .btn-hover:hover{
+                background-color: rgb(24, 39, 39);
+        }
+        .inbutFocus:focus{
+                background-color: rgb(0, 0, 0);
+                border-color: #00bfff ;
+                
+        }
+
+        .w-29 {
+         width: 28%!important;
+         max-width: 390px;
+         min-width: 330px;
+        }
+
+        .w-50x {
+            width: 50px;
+        }
+        .width-secL{
+            max-width: 200px;
+        }
+        .bg-gray{
+            background-color:#323643;
+        }
+        .secPosition{
+            position:fixed;
+            width: 30%!important;
+            max-width: 420px;
+            min-width: 350px;
+            left:65%;
+        }
+
+        .navMainsec{
+            height: 65px;
+            background: rgba(0, 0, 0, 0.8);
+            width: 650px;
+
+        }
+        .mt-10{
+            margin-top: 80px ;
+        }
+        .borderDiv{
+            border: 1px solid;
+        }
+        .textAria{
+            resize: none;
+        }
+        .textAria:focus {
+
+            border-color: #000;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+        }
+
+        .commentHover:hover{
+            color :#00bfff;
+            cursor: pointer;
+        }
+        .retweetHover:hover{
+            color :#00ffa6;
+            cursor: pointer;
+        }
+        .loveHover:hover{
+            color :#ff2600;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-black ">
+    <div class="container">
+        <div class="row vh-100 ">
+            <!-- left section  -->
+            <div class="col-2 mt-3 width-secL d-flex flex-column position-fixed justify-content-between h-100 ">
+                <div>
+                    <div class="p-3  rounded-pill d-inline-block dHover text-light">
+                            <i class="  fs-3 fa-brands fa-twitter"></i>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-house-user"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Home</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-hashtag"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Explore</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light d-block d-lg-none">
+                       
+                            <i class="  fs-3 fa-solid fa-magnifying-glass"></i>
+                        
+                    </div> 
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-bell"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Notification</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-envelope"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Message</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-bookmark"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Bookmarks</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Lists</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-user"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">Profile</h5>
+                    </div> <br>
+                    <div class="p-3  rounded-pill d-inline-flex dHover text-light">
+                        <div class="w-50x">
+                            <i class="  fs-3 fa-solid fa-ellipsis"></i>
+                        </div>
+                        <h5 class="d-none d-xl-block ">More</h5>
+                    </div> <br>
+                    <div>
+                        <button class="btn btn-info btn-hover  w-100 bold btn-lg rounded-5 text-light d-none d-xl-block ">Tweet</button>
+                        <button class="btn btn-info  btn-hover bold btn-lg rounded-circle text-light d-block d-xl-none" ><i class="fs-4 fa-solid fa-feather-pointed"></i></button>
+
+                    </div>
+
+                </div>
+                <div>
+                    <div  class="p-3 mb-3 w-auto rounded-pill d-inline-flex dHover text-light">
+                       
+                        <div  class="">
+                            <a class="text-light" href="login.html">                        <img class="rounded-circle" width="60" height="55" src="pic/34af996ddff444391edab94abcf3c7f3.webp">
+                            </a>
+                        </div>
+                        <h6 class="d-none d-xl-block ">Tia Bassem <br><span class="text-secondary">@tiabassem</span>  </h6>
+                        <i class=" ms-4 p-2 fs-5 d-none d-xxl-block  fa-solid fa-ellipsis"></i>
+
+                    </div>
+                </div>
+
+            </div >
+            <!-- main section  -->
+            <div class="col-lg-6 col-md-10 col-sm-10 offset-2 ">
+                <div class="navMainsec d-flex flex-column justify-content-center position-fixed ">
+                    <h3 class="text-light mt-2 mb-0">Home</h3>
+                </div>
+                <div class="mt-10 w-100 borderDiv d-inline-block align-baseline p-3 border-secondary">
+                    <div class="d-inline-flex">
+                        <img class="rounded-circle" width="60" height="55" src="pic/34af996ddff444391edab94abcf3c7f3.webp">
+                        <textarea name="tweta" placeholder="What's happening?"  id="tweta" class="bg-black border-0 text-light fs-3 form-control  textAria"  ></textarea>
+                    </div>
+                    
+                    <div class=" d-flex align-baseline justify-content-between ">
+                        <div class="text-info">
+                            <i class="dHover pe-2 fs-4 fa-solid fa-image"></i>
+                            <i class="dHover pe-2 fs-4 fa-solid fa-gift"></i>
+                            <i class="dHover pe-2 fs-4 fa-solid fa-list-ol"></i>
+                            <i class="dHover pe-2 fs-4 fa-solid fa-face-laugh-wink"></i>
+                            <i class="dHover pe-2 fs-4 fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <button class="btn btn-info btn-hover mb-1   bold  rounded-5 text-light">Tweet</button>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="d-flex p-2 borderDiv border-secondary dHover">
+                    <div class="text-info m-auto p-2">Show 110 Tweets</div>
+                </div>
+                <div class=" borderDiv border-secondary dHover">
+                    <div class="text-secondary m-2 mb-0 d-flex justify-content-between">
+                        <p class="text-secondary  mb-0">Trending in Egybt</p>
+                        <i class="fa-solid fa-xmark dHover  m-1"></i>
+                    </div>
+                    
+
+                    <div class="p-2">
+                        
+                        <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                            <div >
+                                <img class="rounded-circle" width="60" height="55" src="pic/Pl7-gTfI_400x400.jpeg">
+                            </div>
+                            <h6 >&nbsp Naguib Sawiris<span class="text-secondary">&nbsp@NaguibSawiris</span>  </h6>
+                           
+    
+                        </div>
+                        <div>
+                            <h5 class="text-light d-flex flex-row-reverse">!من غير تحيز الفريق المغربى هو الفريق الأحسن </h5>
+                        </div>
+                        <div class="text-secondary d-flex justify-content-around p-3">
+                            <div class="commentHover"><i class="fa-regular fa-comment"></i>1k </div>
+                            <div class="retweetHover"><i class="fa-solid fa-retweet"></i>120</div>
+                            <div class="loveHover"><i class="fa-regular fa-heart"></i>3k</div>
+                            <div class="commentHover"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class=" borderDiv border-secondary dHover">
+                    <div class="text-secondary m-2 mb-0 d-flex justify-content-between">
+                        <p class="text-secondary  mb-0">Comedian</p>
+                        <i class="fa-solid fa-xmark dHover  m-1"></i>
+                    </div>
+                    
+
+                    <div class="p-2">
+                        
+                        <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                            <div >
+                                <img class="rounded-circle" width="60" height="55" src="pic/A5CweS_p_400x400.jpg">
+                            </div>
+                            <h6 >&nbsp Mohmamed Henendy<span class="text-secondary">&nbsp@OfficialHenedy . Dec8</span>  </h6>
+                           
+    
+                        </div>
+                        <div>
+                            <h5 class="text-light d-flex flex-row-reverse">نبيل الجميل  أخصائي تجميل </h5>
+                            <h5 class="text-light d-flex flex-row-reverse">استعدوا قريبا جدا لواحد من اجمد وأقوى الافلام اللي هتشوفوها</h5>
+                            <img src="pic/FjePNWnXkAo2Z5_.jfif" class="w-100 p-2 rounded-4 " alt="">
+
+                        </div>
+                        <div class="text-secondary d-flex justify-content-around p-3">
+                            <div class="commentHover"><i class="fa-regular fa-comment"></i>15k </div>
+                            <div class="retweetHover"><i class="fa-solid fa-retweet"></i>789</div>
+                            <div class="loveHover"><i class="fa-regular fa-heart"></i>25,125</div>
+                            <div class="commentHover"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class=" borderDiv border-secondary dHover">
+                    <div class="text-secondary m-2 mb-0 d-flex justify-content-between">
+                        <p class="text-secondary  mb-0"> to follow...
+                        </p>
+                        <i class="fa-solid fa-xmark dHover  m-1"></i>
+                    </div>
+                    
+
+                    <div class="p-2">
+                        
+                        <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                            <div >
+                                <img class="rounded-circle" width="60" height="55" src="pic/AitqOcxo_400x400.jpg">
+                            </div>
+                            <h6 >&nbsp فهيد الحماد<span class="text-secondary">&nbsp@FhNalhammad</span>  </h6>
+                           
+    
+                        </div>
+                        <div>
+                            <h5 class="text-light d-flex flex-row-reverse">!"ياجريح البارحه كيف طبت اليوم"
+                            </h5>
+                        </div>
+                        <div class="text-secondary d-flex justify-content-around p-3">
+                            <div class="commentHover"><i class="fa-regular fa-comment"></i>366 </div>
+                            <div class="retweetHover"><i class="fa-solid fa-retweet"></i>245</div>
+                            <div class="loveHover"><i class="fa-regular fa-heart"></i>3,943</div>
+                            <div class="commentHover"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class=" borderDiv border-secondary dHover">
+                    <div class="text-secondary m-2 mb-0 d-flex justify-content-between">
+                        <p class="text-secondary  mb-0">Trending in World</p>
+                        <i class="fa-solid fa-xmark dHover  m-1"></i>
+                    </div>
+                    
+
+                    <div class="p-2">
+                        
+                        <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                            <div >
+                                <img class="rounded-circle" width="60" height="55" src="pic/IY9Gx6Ok_400x400.jpg">
+                            </div>
+                            <h6 >&nbsp Elon Musk<span class="text-secondary">&nbsp@elonmusk</span>  </h6>
+                           
+    
+                        </div>
+                        <div>
+                            <h5 class="text-light d-flex flex-row-reverse">!So inspiring to see the newfound love of freedom of speech by the press 🥰
+                            </h5>
+                        </div>
+                        <div class="text-secondary d-flex justify-content-around p-3">
+                            <div class="commentHover"><i class="fa-regular fa-comment"></i>24k </div>
+                            <div class="retweetHover"><i class="fa-solid fa-retweet"></i>1,789</div>
+                            <div class="loveHover"><i class="fa-regular fa-heart"></i>512k</div>
+                            <div class="commentHover"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class=" borderDiv border-secondary dHover">
+                    <div class="text-secondary m-2 mb-0 d-flex justify-content-between">
+                        <p class="text-secondary  mb-0">Sport</p>
+                        <i class="fa-solid fa-xmark dHover  m-1"></i>
+                    </div>
+                    
+
+                    <div class="p-2">
+                        
+                        <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                            <div >
+                                <img class="rounded-circle" width="60" height="55" src="pic/KhPw6ZzX_400x400.jpg">
+                            </div>
+                            <h6 >&nbsp ScreenMix<span class="text-secondary">&nbsp@ScreenMix . 3h</span>  </h6>
+                           
+    
+                        </div>
+                        <div>
+                            <h5 class="text-light d-flex flex-row-reverse">Mbappe Or Messi </h5>
+                            <img src="pic/FkLnWgOWAAEwAal.jfif" class="w-100 p-2 rounded-4 " alt="">
+
+                        </div>
+                        <div class="text-secondary d-flex justify-content-around p-3">
+                            <div class="commentHover"><i class="fa-regular fa-comment"></i>42.1K </div>
+                            <div class="retweetHover"><i class="fa-solid fa-retweet"></i>3,787</div>
+                            <div class="loveHover"><i class="fa-regular fa-heart"></i>414.1K</div>
+                            <div class="commentHover"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                
+
+            </div>
+
+            <!-- right section -->
+            <div class="col-4 secPosition mt-3 d-none d-lg-block">
+                <div class="input-group mb-4 rounded-5 overflow-hidden  position-fixed width w-29">
+                    <div class="input-group-text rounded-start border-0  bg-gray text-secondary" id="serIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="form-control border-0 inbutFocus text-light bg-gray "  placeholder="twitter search" >
+                        
+                </div>      
+
+                <div class=" mt-5 pt-2 mb-4 rounded-3 bg-gray">
+                    <h3 class="text-light p-2">What's happening </h3>
+                    <div class="d-flex p-2 justify-content-between dHover">
+                        <div >
+                            <p class="text-secondary mb-1">sports. Live</p>
+                            <h5 class="text-light ">2022 FIFA World Cup</h5>
+                    
+                        </div>
+                        <div>
+                            <img class="rounded-2" width="100" height="100" src="pic/zhq_EUQH.jfif" alt="">
+                        </div>
+                        
+
+                    </div>
+                    <div class="d-flex p-2 justify-content-between dHover">
+                        <div >
+                            <p class="text-secondary mb-1">Technology. Trending</p>
+                            <h5 class="text-light ">IPhone  </h5>
+                            <p class="text-secondary mb-1">191K <span class="text-info">Tweets</span></p>
+                        </div>
+                        <div>
+                            <i class="fs-4 text-secondary fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 justify-content-between dHover">
+                        <div >
+                            <p class="text-secondary mb-1">Trending in Egybt</p>
+                            <h5 class="text-light ">يوسف اسامه </h5>
+                            <p class="text-secondary mb-1">Trending with <span class="text-info">الزمالك</span></p>
+                        </div>
+                        <div>
+                            <i class="fs-4 text-secondary fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 justify-content-between dHover">
+                        <div >
+                            <p class="text-secondary mb-1">Trending in Egybt</p>
+                            <h5 class="text-light">ويجز</h5>
+                            <p class="text-secondary mb-1">Trending with <span class="text-info">music</span></p>
+                        </div>
+                        <div>
+                            <i class="fs-4 text-secondary fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 justify-content-between dHover">
+                        <span class="text-info">Show more</span>
+                    </div>
+                   
+
+                </div>
+
+                <div class=" pt-2 mb-4 rounded-3 bg-gray">
+                    <h3 class="text-light p-2">Who to follow</h3>
+                    
+                    <div class="d-flex p-2 justify-content-between  dHover">
+                        <div >
+                            <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                                <div class="">
+                                    <img class="rounded-circle" width="60" height="55" src="pic/Pl7-gTfI_400x400.jpeg">
+                                </div>
+                                <h6 > &nbsp Naguib Sawiris<br><span class="text-secondary"> @NaguibSawiris</span>  </h6>
+        
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-light mt-3 rounded-5" >Follow</button>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 justify-content-between  dHover">
+                        <div >
+                            <div class="p-3  w-100 rounded-pill d-inline-flex  text-light">
+                                <div class="">
+                                    <img class="rounded-circle" width="60" height="55" src="pic/unnamed.jpg">
+                                </div>
+                                <h6 > &nbsp النادي الأهلي<br><span class="text-secondary">&nbsp @AlAhly</span>  </h6>
+        
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-light mt-3 rounded-5" >Follow</button>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2  dHover">
+                        <span class="text-info">Show more</span>
+                    </div>
+                   
+
+                </div>
+                <p class="text-secondary"> <a class="text-secondary pe-2"  href="#"> Terms of Service</a> 
+                    <a class="text-secondary pe-2"  href="#">Privacy Policy</a>
+                    <a class="text-secondary pe-2"  href="#">Cookie Policy</a>
+                    <a class="text-secondary pe-2"  href="#">Accessibility</a>
+                    <a class="text-secondary pe-2"  href="#">Ads info</a>
+                    <a class="text-secondary pe-3"  href="#">More...</a>
+                    © 2022 Twitter, Inc.
+                </p>
+                
+
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

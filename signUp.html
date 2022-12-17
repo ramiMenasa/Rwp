@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Sign up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .form-control:focus {
+            border-color: #000;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+        }
+       
+        .cntr{
+            margin-top: 10%;
+        }
+        #subBtn{
+            background-color: #6dabe4;;
+        }
+
+       #subBtn:hover{
+            background-color: #4292dc;;
+        }
+      
+       
+
+      
+    </style>
+
+</head>
+
+<body class="bg-light ">
+    
+    <div class="container cntr rounded-4 shadow bg-white p-5">
+        <div class="row ">
+            <div class="col-lg-7" >
+                <h1 class="bold">Sign up</h1>
+                <form class=" mt-5 requires-validation" novalidate action="index.html">
+
+                    <div class="input-group mb-4">
+                          <div class="input-group-text  bg-white border-start-0 border-top-0 border-end-0"><i class="fa-solid fa-user"></i></div>
+                          <input type="text" class="form-control  bg-white border-start-0 border-top-0 border-end-0" required id="userName" placeholder="Your Name">
+                          <div class="invalid-feedback">
+                            select user name ex: tia bassem 
+                         </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <div class="input-group-text  bg-white border-start-0 border-top-0 border-end-0"><i class="fa-solid fa-envelope"></i></div>
+                        <input type="email" class="form-control  bg-white border-start-0 border-top-0 border-end-0" required  id="email" placeholder="Your Email">
+                        <div class="invalid-feedback">
+                            select email ex: tiaBassem@gmail(or yahoo).com 
+                        </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                    </div>
+                  
+                    <div class="input-group mb-4">
+                        <div class="input-group-text  bg-white border-start-0 border-top-0 border-end-0"><i class="fa-solid fa-lock"></i></i></div>
+                        <input type="password" class="form-control  bg-white border-start-0 border-top-0 border-end-0" required  id="password" placeholder="Your Password">
+                        <div class="invalid-feedback">
+                            your password must conatin letters Uppercase, smallcase, digit and lingth >= 8 
+                        </div>
+                          
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <div class="input-group-text  bg-white border-start-0 border-top-0 border-end-0"><i class="fa-solid fa-unlock"></i></div>
+                        <input type="password" class="form-control  bg-white border-start-0 border-top-0 border-end-0" required  id="rePassword" placeholder="Repeat Your Password">
+                        <div class="invalid-feedback">
+                            Repassword must match Password
+                        </div>
+                          
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" required  id="checkTerminas">
+                        <label class="form-check-label" for="checkTerminas" >
+                            I agree all statements in <a class="card-link text-dark" href="#"> Terms of service </a>
+                        </label>
+                        <div class="invalid-feedback">
+                            should to check Terms
+                         </div>
+                          
+                    </div>
+
+                    <input type="submit" id="subBtn" class="btn  btn-lg text-light shadow ps-4 pe-4" value="Register">
+                </form>
+                
+            </div>
+            <div class="col-lg-5">
+                <div class="text-center">
+                    <img class="m-5 mb-0" src="pic/signup-image.jpg" alt="">
+                </div>
+                <div class="text-center">
+                    <a class="card-link text-dark bold" href="login.html"> I am already member </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validation.js"></script>
+
+  
+</body>
+
+</html>
